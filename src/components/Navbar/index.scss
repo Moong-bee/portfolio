@@ -1,0 +1,9 @@
+.navbar {
+	transition: all 0.4s;
+
+	&.navbar-transparent {
+		background: 0 0 !important;
+		padding-top: 25px;
+		box-shadow: none;
+	}
+}

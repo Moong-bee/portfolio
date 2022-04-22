@@ -1,11 +1,11 @@
 import { Navbar, Container } from "react-bootstrap"
 import { useEffect, useState } from "react"
 import classNames from "classnames"
-import "./index.css"
+import "./index.scss"
 
-export default () => {
+const _Navbar = () => {
 	const [scrollY, setScrollY] = useState(0)
-	const [navbarClass, setNavbarClass] = useState(["navbar-transparent"])
+	const [navbarClass, setNavbarClass] = useState(["navbar-transparent", ""])
 
 	const listener = () => {
 		setScrollY(window.pageYOffset)
@@ -34,6 +34,7 @@ export default () => {
 			setNavbarClass(newClass)
 		}
 	}, [scrollY])
+
 	return (
 		<Navbar expand="lg" fixed="top" className={classNames(navbarClass)}>
 			<Container>
@@ -42,3 +43,5 @@ export default () => {
 		</Navbar>
 	)
 }
+
+export default _Navbar

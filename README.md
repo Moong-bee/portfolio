@@ -24,3 +24,11 @@
 1. CRA(create react app) 생성
 2. Bootstrap 설정 및 Navbar 생성
  </details>
+
+---
+
+<details open>
+<summary>22.04.22</summary>
+
+1. Section 분리
+ </details>
