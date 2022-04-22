@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import classNames from "classnames"
 import "./index.scss"
 
-const _Navbar = () => {
+const _Navbar = ({ mode = "fixed" }) => {
 	const [scrollY, setScrollY] = useState(0)
 	const [navbarClass, setNavbarClass] = useState(["navbar-transparent", ""])
 
@@ -16,7 +16,7 @@ const _Navbar = () => {
 		return () => {
 			window.removeEventListener("scroll", listener)
 		}
-	})
+	}, [])
 
 	useEffect(() => {
 		const find = navbarClass.indexOf("navbar-transparent")
@@ -35,13 +35,27 @@ const _Navbar = () => {
 		}
 	}, [scrollY])
 
-	return (
-		<Navbar expand="lg" fixed="top" className={classNames(navbarClass)}>
-			<Container>
-				<Navbar.Brand href="#">Navbar</Navbar.Brand>
-			</Container>
-		</Navbar>
-	)
+	if (mode === "fixed") {
+		return (
+			<Navbar expand="lg" className={classNames(navbarClass)} fixed="top">
+				<Container>
+					<Navbar.Brand href="#">Navbar</Navbar.Brand>
+				</Container>
+			</Navbar>
+		)
+	} else if (mode === "sticky") {
+		return (
+			<Navbar
+				expand="lg"
+				className={classNames(navbarClass)}
+				sticky="top"
+			>
+				<Container>
+					<Navbar.Brand href="#">Navbar</Navbar.Brand>
+				</Container>
+			</Navbar>
+		)
+	}
 }
 
 export default _Navbar
