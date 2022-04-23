@@ -1,5 +1,3 @@
-import "../sectionStyle.scss"
-
 const MainSection = () => {
 	return (
 		<div className="section">

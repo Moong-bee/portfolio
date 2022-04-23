@@ -1,6 +1,6 @@
 const ContectSection = () => {
 	return (
-		<>
+		<div className="section">
 			<h1>Contect Section</h1>
 			<p>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
@@ -44,7 +44,7 @@ const ContectSection = () => {
 				molestiae beatae soluta quos fugit, itaque, facere cum. Iste
 				debitis incidunt possimus officiis.
 			</p>
-		</>
+		</div>
 	)
 }
 

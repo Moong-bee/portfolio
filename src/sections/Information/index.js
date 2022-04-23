@@ -1,6 +1,6 @@
 const InfoSection = () => {
 	return (
-		<>
+		<div className="section">
 			<h1>Information Section</h1>
 			<p>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
@@ -44,7 +44,7 @@ const InfoSection = () => {
 				molestiae beatae soluta quos fugit, itaque, facere cum. Iste
 				debitis incidunt possimus officiis.
 			</p>
-		</>
+		</div>
 	)
 }
 

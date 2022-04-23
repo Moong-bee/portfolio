@@ -1,6 +1,6 @@
 const ProjectSection = () => {
 	return (
-		<>
+		<div className="section">
 			<h1>Project Section</h1>
 			<p>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
@@ -44,7 +44,7 @@ const ProjectSection = () => {
 				molestiae beatae soluta quos fugit, itaque, facere cum. Iste
 				debitis incidunt possimus officiis.
 			</p>
-		</>
+		</div>
 	)
 }
 
