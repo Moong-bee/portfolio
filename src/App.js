@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar"
+import { Container } from "react-bootstrap"
 import {
 	MainSection,
 	InfoSection,
@@ -9,11 +9,12 @@ import {
 function App() {
 	return (
 		<>
-			<Navbar />
-			<MainSection />
-			<InfoSection />
-			<ProjectSection />
-			<ContectSection />
+			<Container>
+				<MainSection />
+				<InfoSection />
+				<ProjectSection />
+				<ContectSection />
+			</Container>
 		</>
 	)
 }
